@@ -1,0 +1,14 @@
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\bin\Debug\net8.0\NewApp.exe
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\bin\Debug\net8.0\NewApp.deps.json
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\bin\Debug\net8.0\NewApp.runtimeconfig.json
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\bin\Debug\net8.0\NewApp.dll
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\bin\Debug\net8.0\NewApp.pdb
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\obj\Debug\net8.0\NewApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\obj\Debug\net8.0\NewApp.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\obj\Debug\net8.0\NewApp.AssemblyInfo.cs
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\obj\Debug\net8.0\NewApp.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\obj\Debug\net8.0\NewApp.dll
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\obj\Debug\net8.0\refint\NewApp.dll
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\obj\Debug\net8.0\NewApp.pdb
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\obj\Debug\net8.0\NewApp.genruntimeconfig.cache
+C:\Users\Admin\Downloads\PTPMQL\Net_Core\NewApp\obj\Debug\net8.0\ref\NewApp.dll
