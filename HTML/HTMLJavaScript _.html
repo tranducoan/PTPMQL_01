@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sử dụng JavaScript để thay đổi văn bản</h2>
+<p>Ví dụ này viết "Xin chào JavaScript!" thành một phần tử HTML có id="demo":</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> 
+
+<h2> tác dụng javascript </h2>
+<p>JavaScript có thể thay đổi nội dung:
+    <b>ví dụ </b>
+    <body>
+
+        <h2>My First JavaScript</h2>
+        
+        <p>JavaScript có thẻ thay đổi nội dung trong html </p>
+        
+        <button type="button" onclick="myFunction()">Click Me!</button>
+        
+        <p id="demo">This is a demonstration.</p>
+        
+        <script>
+        function myFunction() { 
+          document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+        </script>
+
+    <h2>JavaScript có thể thay đổi kiểu:</h2>
+    <p> ví dụ </p>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").style.fontSize = "25px"; 
+          document.getElementById("demo").style.color = "red";
+          document.getElementById("demo").style.backgroundColor = "yellow";        
+        }
+        </script>
+        <h2>JavaScript có thể thay đổi thuộc tính: </h2>
+        <b>ví dụ </b>
+        
+<script>
+    function light(sw) {
+      var pic;
+      if (sw == 0) {
+        pic = "pic_bulboff.gif"
+      } else {
+        pic = "pic_bulbon.gif"
+      }
+      document.getElementById('myImage').src = pic;
+    }
+    </script>
+    
+    <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+    
+    <p>
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+</p>
+<h2>Thẻ HTML noscript</h2> 
+<p>Thẻ HTML noscript xác định nội dung thay thế sẽ được hiển thị cho người dùng đã tắt tập lệnh trong trình duyệt của họ 
+    hoặc có trình duyệt không hỗ trợ tập lệnh:</p>
+    <b> ví dụ </b>
+    <body>
+
+        <p id="demo"></p>
+        
+        <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script>
+        
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+        
+        <p>Trình duyệt không hỗ trợ JavaScript sẽ hiển thị văn bản được viết bên trong phần tử noscript.</p>
+</body>
+</html>

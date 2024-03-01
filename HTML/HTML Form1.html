@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Biểu mẫu HTML</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="toàn"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="trần"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Một biểu mẫu HTML được sử dụng để thu thập thông tin đầu vào của người dùng. Đầu vào của người dùng thường được gửi đến máy chủ để xử lý.</p>
+
+<h2>Trường văn bản </h2>
+<body>
+    
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="toàn "><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="trần">
+    </form>
+    
+    <p>Lưu ý rằng bản thân biểu mẫu không hiển thị.</p>
+    
+    <p>Cũng lưu ý rằng độ rộng mặc định của trường nhập văn bản là 20 ký tự.</p>
+    
+    </body>
+
+    <body>
+
+        <h2>Nút chọn</h2>
+        
+        <p>Việc input type="radio" xác định một nút radio.<br>
+
+            Nút radio cho phép người dùng chọn MỘT trong số các lựa chọn có giới hạn.</p>
+        
+        <form>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">JavaScript</label>
+        </form> 
+        
+        </body>
+        <body>
+
+            <h2>Hộp kiểm</h2>
+            <p>Việc input type="checkbox" xác định một hộp kiểm .<br>
+
+                Các hộp kiểm cho phép người dùng chọn các tùy chọn KHÔNG hoặc NHIỀU tùy chọn trong một số lựa chọn giới hạn.</p>
+            <p>kiểu <strong>đầu vào="hộp kiểm"</strong> xác định hộp kiểm:</p>
+            
+            <form action="/action_page.php">
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1"> tôi có một chiếc xe đạp</label><br>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2"> tôi có một chiếc xe hơi</label><br>
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+              <label for="vehicle3"> Tôi có một chiếc thuyền</label><br><br>
+              <input type="submit" value="Submit">
+            </form> 
+            
+            </body>
+            <body>
+
+                <h2>nút gửi </h2>
+                <p>Xác định input type="submit"  nút để gửi dữ liệu biểu mẫu tới trình xử lý biểu mẫu.<br>
+                    Trình xử lý biểu mẫu thường là một tệp trên máy chủ có tập lệnh để xử lý dữ liệu đầu vào.<br>
+                    Trình xử lý biểu mẫu được chỉ định trong action thuộc tính của biểu mẫu.</p>
+                <form action="/action_page.php">
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname" value="John"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                  <input type="submit" value="Submit">
+                </form> 
+                
+                <p>Nếu bạn nhấp vào nút "Gửi", dữ liệu biểu mẫu sẽ được gửi đến trang có tên "/action_page.php".</p>
+                </body>
+
+                <body>
+
+                    <h2>Thuộc tính tên</h2>
+                    
+                    <form action="/action_page.php">
+                      <label for="fname">First name:</label><br>
+                      <input type="text" id="fname" value="John"><br><br>
+                      <input type="submit" value="Submit">
+                    </form> 
+                    
+                    <p>Nếu bạn nhấp vào nút "Gửi", dữ liệu biểu mẫu sẽ được gửi đến trang có tên "/action_page.php".</p>
+                    
+                    <p>Lưu ý rằng giá trị của trường "Tên" sẽ không được gửi vì phần tử đầu vào không có thuộc tính tên.</p>
+                    </body>
+
+
+                    
+
+</body>
+</html>

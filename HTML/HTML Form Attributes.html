@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>1. Thuộc tính hành dộng </h2>
+<p>Thuộc actiontính xác định hành động sẽ được thực hiện khi biểu mẫu được gửi.<br>
+    Thông thường, dữ liệu biểu mẫu được gửi đến một tệp trên máy chủ khi người dùng nhấp vào nút gửi.</p>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<p>Nếu bạn nhấp vào nút "Gửi", dữ liệu biểu mẫu sẽ được gửi đến trang có tên "/action_page.php".</p>
+<h2> 2. thuộc tính mục tiêu </h2>
+<p>Thuộc target tính chỉ định nơi hiển thị phản hồi nhận được sau khi gửi biểu mẫu.<br>
+    Thuộc target tính có thể có một trong các giá trị sau:<br>
+    Giá trị mặc định có _self nghĩa là phản hồi sẽ mở trong cửa sổ hiện tại.
+</p>
+<p>Khi gửi biểu mẫu này, kết quả sẽ được mở trong tab trình duyệt mới:</p>
+<form action="/action_page.php" target="_blank">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+<h2> 3.Thuộc tính phương thức </h2>
+<p>Thuộc method tính chỉ định phương thức HTTP sẽ được sử dụng khi gửi dữ liệu biểu mẫu.<br>
+    Dữ liệu biểu mẫu có thể được gửi dưới dạng biến URL (với method="get") hoặc dưới dạng giao dịch bài đăng HTTP (với method="post").<br>
+    Phương thức HTTP mặc định khi gửi dữ liệu biểu mẫu là GET.  </p>
+<h2> GET </h2>
+<body>
+    
+    <form action="/action_page.php" target="_blank" method="get">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <p>Sau khi bạn gửi, hãy lưu ý rằng các giá trị biểu mẫu hiển thị trên thanh địa chỉ của tab trình duyệt mới.</p>
+    </body>
+<h2> POST </h2>
+<body>
+    
+    <form action="/action_page.php" target="_blank" method="post">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <p>Sau khi bạn gửi, hãy lưu ý rằng, không giống như phương thức GET, các giá trị biểu mẫu KHÔNG hiển thị trên thanh địa chỉ của tab trình duyệt mới.</p>
+    </body>
+<p><b>Lưu ý về NHẬN:</b><br>
+Nối dữ liệu biểu mẫu vào URL, theo cặp tên/giá trị<br>
+KHÔNG BAO GIỜ sử dụng GET để gửi dữ liệu nhạy cảm! (dữ liệu biểu mẫu đã gửi sẽ hiển thị trong URL!)<br>
+Độ dài của URL bị giới hạn (2048 ký tự)<br>
+Hữu ích cho việc gửi biểu mẫu khi người dùng muốn đánh dấu kết quả<br>
+GET phù hợp với dữ liệu không an toàn, như chuỗi truy vấn trong Google<br></p>
+<p><b>Lưu ý về POST:</b>Nối dữ liệu biểu mẫu bên trong nội dung của yêu cầu HTTP (dữ liệu biểu mẫu đã gửi không được hiển thị trong URL)<br>
+    POST không có giới hạn về kích thước và có thể được sử dụng để gửi lượng lớn dữ liệu.<br>
+    Việc gửi biểu mẫu bằng POST không thể được đánh dấu<br>
+</p>
+<h2>Thuộc tính tự động hoàn thành </h2>
+<p>Thuộc tính này autocompletechỉ định xem biểu mẫu có nên bật hay tắt tính năng tự động hoàn thành hay không.<br>
+    Khi bật tính năng tự động hoàn thành, trình duyệt sẽ tự động hoàn thành các giá trị dựa trên các giá trị mà người dùng đã nhập trước đó.<br></p>
+    <body>
+        
+        <p>Điền và gửi biểu mẫu, sau đó tải lại trang, bắt đầu điền lại biểu mẫu - và xem cách tự động hoàn thành hoạt động.</p>
+        
+        <p>Sau đó, thử đặt tự động hoàn thành thành "tắt".</p>
+        
+        <form action="/action_page.php" autocomplete="on">
+          <label for="fname">tên :</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email"><br><br>
+          <input type="submit">
+        </form>
+        </body>
+      <h2>Thuộc tính Novalidate </h2>  
+      <p>Thuộc novalidate tính là thuộc tính boolean.<br>
+        Khi xuất hiện, nó chỉ định rằng dữ liệu biểu mẫu (đầu vào) sẽ không được xác thực khi gửi.</p>
+        <body>
+            
+            <p>Thuộc tính novalidate chỉ ra rằng thông tin nhập vào biểu mẫu không được xác thực khi gửi:</p>
+            
+            <form action="/action_page.php" novalidate>
+              <label for="email">Enter your email:</label>
+              <input type="email" id="email" name="email"><br><br>
+              <input type="submit">
+            </form>
+            </body>
+            
+</body>
+</html>

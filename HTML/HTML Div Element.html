@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<style>
+div {
+  background-color: #FFF4A3;
+}
+</style>
+<body>
+
+<h1>1.Phân tử DIV </h1>
+<p> Theo mặc định, phần tử này <b>div</b> là phần tử khối, 
+    nghĩa là nó chiếm toàn bộ chiều rộng có sẵn và đi kèm với các ngắt dòng trước và sau.</p>
+<h2> ví dụ </h2>
+Lorem Ipsum <div>tôi là một div</div> tôi đang ở đây 
+<p>Nền màu vàng được thêm vào để thể hiện dấu vết của phần tử DIV.</p>
+
+<h1>2. thẻ div làm vùng chứa  </h1>
+<p>Phần tử này <b>div</b> thường được sử dụng để nhóm các phần của trang web lại với nhau. </p>
+    <h2> ví dụ </h2>
+    <style>
+        div {
+          background-color: #FFF4A3;
+        }
+        </style>
+        <body>
+        
+        <div>
+          <h2>London</h2>
+          <p>London là thủ đô của nước Anh..</p>
+          <p>London có hơn 13 triệu dân.</p>
+        </div>
+        <p>Nền màu vàng được thêm vào để thể hiện dấu vết của phần tử DIV.</p>
+
+        <h1> 3.Căn giữa phần tử div </h1>
+        <p> Nếu bạn có một div phần tử không rộng 100% và bạn muốn căn giữa nó, hãy đặt thuộc margin tính CSS thành auto.</p>
+        <h2> ví dụ </h2>
+        <style>
+            div {
+              width: 300px;
+              margin: auto;
+              background-color: #FFF4A3;
+            }
+            </style>
+            <body>
+            
+            <div>
+              <h2>London</h2>
+              <p>London là thủ đô của nước Anh.</p>
+              <p>London có hơn 13 triệu dân..</p>
+            </div>
+            </body>
+
+<h1>4 .Nhiều phần tử div </h1>
+<p>Bạn có thể có nhiều div vùng chứa trên cùng một trang. </p>
+<h2> ví dụ </h2>
+<body>
+
+    <h1>Multiple DIV Elements</h1>
+    
+    <div style="background-color:#FFF4A3;">
+      <h2>London</h2>
+      <p>London là thủ đô của nước Anh.</p>
+      <p>London có hơn 13 triệu dân.</p>
+    </div>
+    
+    <div style="background-color:#FFC0C7;">
+      <h2>Hoàng sa </h2>
+      <p>là của Việt Nam </p>
+      
+    </div>
+    
+    <div style="background-color:#D9EEE1;">
+      <h2>Trường sa </h2>
+      <p>Là của Việt Nam </p>
+    </div>
+    <p>Các kiểu CSS được thêm vào để giúp phân tách các div dễ dàng hơn và làm cho chúng đẹp hơn :)</p>
+    </body>
+<h1>5.Căn chỉnh các phần tử div cạnh nhau </h1>
+<p> Khi xây dựng trang web, bạn thường muốn có hai hoặc nhiều div phần tử cạnh nhau , có nhiều pp khác nhau <br>
+<p><b>1.Trôi nổi</b>
+    Thuộc tính CSS float ban đầu không nhằm mục đích căn chỉnh div các phần tử cạnh nhau nhưng đã được sử dụng cho mục đích này trong nhiều năm.
+    Thuộc tính CSS float được sử dụng để định vị và định dạng nội dung, 
+    đồng thời cho phép các phần tử nổi cạnh nhau thay vì chồng lên nhau.</p>
+
+    <b>ví dụ </b>
+    <style>
+        div.mycontainer {
+          width:100%;
+          overflow:auto;
+        }
+        div.mycontainer div {
+          width:33%;  
+          float:left;
+        }
+        </style>
+        <body>
+        
+        <div class="mycontainer">
+        
+          <div style="background-color:#FFF4A3;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+          </div>
+          
+          <div style="background-color:#FFC0C7;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+          </div>
+          
+          <div style="background-color:#D9EEE1;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+          </div>  
+        </div> 
+        </body>
+</p>
+<p><b> 2 Chặn Nội tuyến </b>
+<p> Nếu bạn thay đổi thuộc tính div của phần tử displaytừ block thành inline-block, 
+    các div phần tử sẽ không còn thêm dấu ngắt dòng trước và sau nữa và 
+    sẽ được hiển thị cạnh nhau thay vì chồng lên nhau.</p>
+    <b>ví dụ </b>
+    <style>
+        div {
+          width:30%;  
+          display:inline-block;
+        }
+        </style>
+        <body>
+        
+        <div style="background-color:#FFF4A3;">
+          <h2>London</h2>
+          <p>London is the capital city of England.</p>
+          <p>London has over 13 million inhabitants.</p>
+        </div>
+        
+        <div style="background-color:#FFC0C7;">
+          <h2>Oslo</h2>
+          <p>Oslo is the capital city of Norway.</p>
+          <p>Oslo has over 600.000 inhabitants.</p>
+        </div>
+        
+        <div style="background-color:#D9EEE1;">
+          <h2>Rome</h2>
+          <p>Rome is the capital city of Italy.</p>
+          <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+
+        <p><b>3 Uốn cong</b>
+        <p> Mô-đun bố cục CSS Flexbox được giới thiệu để giúp thiết kế cấu trúc bố cục đáp ứng linh hoạt mà không cần sử dụng float hoặc định vị dễ dàng hơn.<br>
+            Để làm cho phương thức CSS flex hoạt động, hãy bao quanh các div phần tử bằng một div phần tử khác và đặt cho nó trạng thái dưới dạng vùng chứa flex.</p>
+            <b> ví dụ </b>
+            <head>
+                <style>
+                .mycontainer {
+                  display: flex;
+                }
+                .mycontainer > div {
+                  width:33%;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h1>Flexbox Example</h1>
+                
+                <p>Align three DIV elements side by side.</p>
+                
+                <div class="mycontainer">
+                
+                  <div style="background-color:#FFF4A3;">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>London has over 13 million inhabitants.</p>
+                  </div>
+                  
+                  <div style="background-color:#FFC0C7;">
+                    <h2>Oslo</h2>
+                    <p>Oslo is the capital city of Norway.</p>
+                    <p>Oslo has over 600.000 inhabitants.</p>
+                  </div>
+                  
+                  <div style="background-color:#D9EEE1;">
+                    <h2>Rome</h2>
+                    <p>Rome is the capital city of Italy.</p>
+                    <p>Rome has almost 3 million.</p>
+                  </div>
+                
+                </div>
+                <p><b>4 Lưới </b>
+                <p> Mô-đun bố cục lưới CSS cung cấp một hệ thống bố cục dựa trên lưới, với các hàng và cột, giúp thiết kế trang web dễ dàng hơn mà không cần phải sử dụng các float và định vị.<br>
+                    Nghe gần giống như flex nhưng có khả năng xác định nhiều hàng và định vị từng hàng riêng<br>
+                    Phương pháp lưới CSS yêu cầu bạn bao quanh các div phần tử bằng một div phần tử khác và đưa ra trạng thái dưới dạng vùng chứa lưới, đồng thời bạn phải chỉ định độ rộng của mỗi cột.</p>
+<b> ví dụ </b>
+<head>
+    <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h1>Grid Example</h1>
+    
+    <p>Align three DIV elements side by side.</p>
+    
+    <div class="grid-container">
+    
+    <div style="background-color:#FFF4A3;">
+      <h2>London</h2>
+      <p>London is the capital city of England.</p>
+      <p>London has over 13 million inhabitants.</p>
+    </div>
+    
+    <div style="background-color:#FFC0C7;">
+      <h2>Oslo</h2>
+      <p>Oslo is the capital city of Norway.</p>
+      <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+    
+    <div style="background-color:#D9EEE1;">
+      <h2>Rome</h2>
+      <p>Rome is the capital city of Italy.</p>
+      <p>Rome has almost 3 million inhabitants.</p>
+    </div>
+    
+    </div>
+</body>
+
+</body>
+</html>

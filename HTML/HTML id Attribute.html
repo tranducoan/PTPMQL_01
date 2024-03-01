@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+
+<h2>Sử dụng thuộc tính id(The id Attribute)</h2>
+<p>Thuộc id tính chỉ định một id duy nhất cho phần tử HTML. Giá trị của id thuộc tính phải là duy nhất trong tài liệu HTML.
+    Thuộc id tính được sử dụng để trỏ đến một khai báo kiểu cụ thể trong biểu định kiểu. Nó cũng được JavaScript sử dụng để truy cập và thao tác phần tử với id cụ thể.
+    Cú pháp của id là: viết ký tự băm (#), theo sau là tên id. Sau đó, xác định thuộc tính CSS trong dấu ngoặc nhọn {}.
+    Trong ví dụ sau, chúng ta có một h1 phần tử trỏ đến tên id "myHeader". Phần tử này h1 sẽ được tạo kiểu theo #myHeader định nghĩa kiểu trong phần đầu:</p>
+<h1 id="myHeader">My Header</h1>
+
+<h2>Sự khác biệt giữa lớp và ID</h2>
+<p> Một tên lớp có thể được sử dụng bởi nhiều phần tử HTML, trong khi tên id chỉ được sử dụng bởi một phần tử HTML trong trang:</p>
+<head>
+    <style>
+    /* Style the element with the id "myHeader" */
+    #myHeader {
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    /* Style all elements with the class name "city" */
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+    } 
+    </style>
+    </head>
+    <body>
+    
+    <h2>Sự khác biệt giữa lớp và ID</h2>
+    <p>Một tên lớp có thể được sử dụng bởi nhiều phần tử HTML, trong khi tên id chỉ được sử dụng bởi một phần tử HTML trong trang:</p>
+    
+    <!-- An element with a unique id -->
+    <h1 id="myHeader">My Cities</h1>
+    
+    <!-- Multiple elements with same class -->
+    <h2 class="city">London</h2>
+    <p>London là thủ đô England.</p>
+    
+    <h2 class="city">Paris</h2>
+    <p>Paris là thủ đô France.</p>
+    
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo là thủ đô Japan.</p>
+    
+    </body>
+    <h2> Dấu trang HTML có ID và liên kết</h2>
+    <p> Dấu trang HTML được sử dụng để cho phép người đọc chuyển đến các phần cụ thể của trang web.<br>
+        Dấu trang có thể hữu ích nếu trang của bạn rất dài.<br>
+        Để sử dụng dấu trang, trước tiên bạn phải tạo dấu trang, sau đó thêm liên kết vào dấu trang đó.<br>
+        Sau đó, khi nhấp vào liên kết, trang sẽ cuộn đến vị trí có dấu trang.<br></p>
+<b> ví dụ </b>
+<body>
+
+    <p><a href="#C4">Jump to Chapter 4</a></p>
+    <p><a href="#C10">Jump to Chapter 10</a></p>
+    
+    <h2>Chapter 1</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 2</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 3</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2 id="C4">Chapter 4</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 5</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 6</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 7</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 8</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 9</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2 id="C10">Chapter 10</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 11</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 12</h2>
+    <p>This chapter explains ba bla bla</p>
+</body>
+
+<h2> Sử dụng thuộc tính id trong JavaScript</h2>
+<p>Thuộc tính này idcũng có thể được JavaScript sử dụng để thực hiện một số tác vụ cho phần tử cụ thể đó.<br>
+    JavaScript có thể truy cập một phần tử có id cụ thể bằng phương thức:getElementById() </p>
+    <b> ví dụ </b>
+    <body>
+
+        <h2>Sử dụng thuộc tính id trong JavaScript</h2>
+        <p>JavaScript có thể truy cập một phần tử có id được chỉ định bằng cách sử dụng phương thức getElementById():</p>
+        
+        <h1 id="myHeader">Hello World!</h1>
+        <button onclick="displayResult()">Change text</button>
+        
+        <script>
+        function displayResult() {
+          document.getElementById("myHeader").innerHTML = "Have a nice day!";
+        }
+        </script>
+        
+        </body>
+        <h1> <b>tóm tắt</b> </h1>
+        <p>Thuộc id tính được sử dụng để chỉ định id duy nhất cho phần tử HTML<br>
+            Giá trị của id thuộc tính phải là duy nhất trong tài liệu HTML<br>
+            Thuộc id tính được CSS và JavaScript sử dụng để tạo kiểu/chọn một thành phần cụ thể<br>
+            Giá trị của id thuộc tính có phân biệt chữ hoa chữ thường<br>
+            Thuộc tính này id cũng được sử dụng để tạo dấu trang HTML<br>
+            JavaScript có thể truy cập một phần tử có id cụ thể bằng  getElementById()<br> </p>
+</body>
+</html>

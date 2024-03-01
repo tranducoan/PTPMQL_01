@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>1.Liên kết HTML - Cú pháp </h2>
+<h2>HTML Links Syntax </h2>
+<p>Thẻ HTML <b>(a)</b> xác định một siêu liên kết.<br>
+    Thuộc tính quan trọng nhất của <b>(a)</b> phần tử là <b>href</b> thuộc tính, cho biết đích đến của liên kết.<br>
+        Văn bản liên kết là phần mà người đọc sẽ nhìn thấy.<br>
+        Nhấp vào văn bản liên kết sẽ đưa người đọc đến địa chỉ URL được chỉ định.<br></p>
+<h2>ví dụ </h2>
+<p><a href="https://daotaodaihoc.humg.edu.vn/#/home">Chào mừng đến với HUMG </a></p>
+
+<h2>2.HTML Links - The target Attribute (Thuộc tính đích) </h2>
+<p>Thuộc target tính có thể có một trong các giá trị sau:<br>
+    <b>_self</b>- Mặc định. Mở tài liệu trong cùng cửa sổ/tab khi tài liệu được nhấp vào<br>
+    <b>_blank-</b> Mở tài liệu trong cửa sổ hoặc tab mới<br>
+    <b>_parent-</b>  Mở tài liệu trong khung char <br>
+        <b>_top-</b> Mở tài liệu ở chế độ toàn màn hình<br></p>
+<h2> ví dụ </h2>
+<a href="https://daotaodaihoc.humg.edu.vn/#/home"target="_blank">Chào mừng đến với HUMG</a> 
+<p>Nếu target="_blank", liên kết sẽ mở trong cửa sổ hoặc tab trình duyệt mới.</p>
+
+<h2> 3.Absolute URLs vs. Relative URLs (URL tương đối và tuyệt đối )</h2>
+<p>Cả hai ví dụ trên đều sử dụng <b>URL tuyệt đối</b> (địa chỉ web đầy đủ) trong <b>href</b> thuộc tính.<br>
+    Liên kết cục bộ (liên kết đến một trang trong cùng một trang web) được chỉ định bằng <b>URL tương đối</b> (không có phần "https://www"):</p>
+<h2> ví dụ </h2>
+
+<h2>Absolute URLs( URL tuyết đối ) </h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs( URL tương đối ) </h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+<h2>4. HTML Links - Use an Image as a Link( sử dụng hình ảnh làm liên kết )</h2>
+<p>Để sử dụng hình ảnh làm liên kết, chỉ cần đặt <b>img</b> thẻ bên trong thẻ <b>a</b> </p>
+<h2>ví dụ </h2>
+<h3>hình ảnh này là 1 liên kết </h3>
+<p>Ấn vào hình ảnh để truy cập vào trang wed </p>
+<a href="https://daotaodaihoc.humg.edu.vn/#/home"><img src="c:\Users\Admin\Pictures\Saved Pictures\humg.png" style="width:42px;height:42px;"></a>
+
+<h2>5. Liên kết đến một địa chỉ email</h2>
+<p> Sử dụng <b>mailto:</b>bên trong <b>href </b>thuộc tính để tạo 
+    liên kết mở chương trình email của người dùng (để cho phép họ gửi email mới):</p>
+<h2>Ví dụ </h2>
+<p>Để tạo liên kết mở trong chương trình email của người dùng (để họ gửi email mới), 
+    hãy sử dụng mailto: bên trong thuộc tính href:</p>
+<p><a href="sonsuke655@gmail.com">Gửi mail </a></p>
+
+<h2>6.Nút dưới dạng liên kết</h2>
+<p>Để sử dụng nút HTML làm liên kết, bạn phải thêm một số mã JavaScript.<br>
+    JavaScript cho phép bạn chỉ định điều gì xảy ra ở một số sự kiện nhất định, 
+    chẳng hạn như một lần nhấp vào nút:</p>
+    <h2> ví dụ </h2>
+<p>Nhấp vào nút để đi tới hướng dẫn HTML.</p>
+<button onclick="document.location='default.asp'">hướng dẫn HTML </button>
+
+<h2> 7.Tiêu đề liên kết</h2>
+<p>Thuộc <b>title</b> tính chỉ định thông tin bổ sung về một phần tử.
+     Thông tin thường được hiển thị dưới dạng văn bản chú giải công cụ khi chuột di chuyển qua phần tử.</p>
+<h2>ví dụ </h2>
+<p>Thuộc tính tiêu đề chỉ định thông tin bổ sung về một phần tử. Thông tin thường được hiển thị dưới dạng văn bản chú giải công cụ khi chuột di chuyển qua phần tử.</p>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">đi đến phần tự học HTML </a>
+
+<h2> tóm tắt </h2>
+<p> Sử dụng <b>a</b> phần tử để xác định một liên kết<br>
+    Sử dụng <b>refh</b>thuộc tính để xác định địa chỉ liên kết<br>
+    Sử dụng <b>target</b>thuộc tính để xác định nơi mở tài liệu được liên kết<br>
+    Sử dụng <b> img</b> phần tử (bên trong <b>a</b> ) để sử dụng hình ảnh làm liên kết<br>
+    Sử dụng <b>mailto:</b>lược đồ bên trong <b>href</b> thuộc tính để tạo liên kết mở chương trình email của người dùng<br> </p>
+
+</body>
+</html>
+

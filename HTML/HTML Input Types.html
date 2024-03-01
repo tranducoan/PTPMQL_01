@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Text field</h2>
+<p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+<p>Also note that the default width of a text field is 20 characters.</p>
+
+<body>
+
+    <h2>Password field</h2>
+    
+    <p>The <strong>input type="password"</strong> defines a password field:</p>
+    
+    <form action="/action_page.php">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br>
+      <label for="pwd">Password:</label><br>
+      <input type="password" id="pwd" name="pwd"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    
+    <p>The characters in a password field are masked (shown as asterisks or circles).</p>
+    
+    </body>
+    <body>
+
+        <h2>Submit Button</h2>
+        
+        <p>The <strong>input type="submit"</strong> defines a button for submitting form data to a form-handler:</p>
+        
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </form> 
+        
+        <p>If you click "Submit", the form-data will be sent to a page called "/action_page.php".</p>
+        
+        </body>
+
+        <body>
+
+            <form action="/action_page.php">
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <input type="submit">
+            </form> 
+            
+            </body>
+
+            <body>
+
+                <h2>Reset Button</h2>
+                
+                <p>The <strong>input type="reset"</strong> defines a reset button that resets all form values to their default values:</p>
+                
+                <form action="/action_page.php">
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname" value="John"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                  <input type="submit" value="Submit">
+                  <input type="reset" value="Reset">
+                </form> 
+                
+                <p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
+                
+                </body>
+                <body>
+
+                    <h2>Radio Buttons</h2>
+                    
+                    <p>The <strong>input type="radio"</strong> defines a radio button:</p>
+                    
+                    <p>Choose your favorite Web language:</p>
+                    <form action="/action_page.php">
+                      <input type="radio" id="html" name="fav_language" value="HTML">
+                      <label for="html">HTML</label><br>
+                      <input type="radio" id="css" name="fav_language" value="CSS">
+                      <label for="css">CSS</label><br>
+                      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                      <label for="javascript">JavaScript</label><br><br>
+                      <input type="submit" value="Submit">
+                    </form> 
+                    
+                    </body>
+                    <body>
+
+                        <h2>Checkboxes</h2>
+                        <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+                        
+                        <form action="/action_page.php">
+                          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                          <label for="vehicle1"> I have a bike</label><br>
+                          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                          <label for="vehicle2"> I have a car</label><br>
+                          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                          <label for="vehicle3"> I have a boat</label><br><br>
+                          <input type="submit" value="Submit">
+                        </form> 
+                        
+                        </body>
+                        <body>
+
+                            <h2>Input Button</h2>
+                            
+                            <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+                            
+                            </body>
+                            <body>
+
+                                <h2>Show a Color Picker</h2>
+                                
+                                <p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+                                
+                                <form action="/action_page.php">
+                                  <label for="favcolor">Select your favorite color:</label>
+                                  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                                  <input type="submit" value="Submit">
+                                </form>
+                                
+                                <p><b>Note:</b> type="color" is not supported in Internet Explorer 11.</p>
+                                
+                                </body>
+                                <body>
+
+                                    <h2>Date Field</h2>
+                                    
+                                    <p>The <strong>input type="date"</strong> is used for input fields that should contain a date.</p>
+                                    
+                                    <form action="/action_page.php">
+                                      <label for="birthday">Birthday:</label>
+                                      <input type="date" id="birthday" name="birthday">
+                                      <input type="submit" value="Submit">
+                                    </form>
+                                    
+                                    <p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11.</p>
+                                    
+                                    </body>
+                                    <body>
+
+                                        <h2>Date Field Restrictions</h2>
+                                        
+                                        <p>Use the min and max attributes to add restrictions to dates:</p>
+                                        
+                                        <form action="/action_page.php">
+                                          <label for="datemin">Enter a date after 2000-01-01:</label>
+                                          <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+                                        
+                                          <label for="datemax">Enter a date before 1980-01-01:</label>
+                                          <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+                                          
+                                          <input type="submit" value="Submit">
+                                        </form>
+                                        
+                                        <p><strong>Note:</strong> type="date" is not supported in Internet Explorer 11.</p>
+                                        
+                                        </body>
+                                        <body>
+
+                                            <h1>Display a Week Input Control</h1>
+                                            
+                                            <p>The <strong>input type="week"</strong> allows the user to select a week and year.</p>
+                                            
+                                            <p>If the browser supports it, a date picker pops up when entering the input field.</p>
+                                            
+                                            <form action="/action_page.php">
+                                              <label for="week">Select a week:</label>
+                                              <input type="week" id="week" name="week">
+                                              <input type="submit" value="Submit">
+                                            </form>
+                                            
+                                            <p><strong>Note:</strong> type="week" is not supported in Firefox, Safari or Internet Explorer 11.</p>
+                                            
+                                            </body>
+</body>
+</html>
+

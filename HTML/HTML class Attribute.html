@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<p><b>Tóm tắt chương :</b>Thuộc tính HTML class chỉ định một hoặc nhiều tên lớp cho một phần tử<br>
+    Các lớp được CSS và JavaScript sử dụng để chọn và truy cập các phần tử cụ thể<br>
+    Thuộc class tính có thể được sử dụng trên bất kỳ phần tử HTML nào<br>
+    Tên lớp có phân biệt chữ hoa chữ thường<br>
+    Các phần tử HTML khác nhau có thể trỏ đến cùng một tên lớp<br>
+    JavaScript có thể truy cập các phần tử có tên lớp cụ thể bằng phương thức <b>getElementsByClassName()</b> </p>
+<div class="city">
+<h2>hà nội </h2>
+<p>là thủ đô của Việt Nam </p>
+</div> 
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris là thủ đo của Pháp </p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo  là thủ đo của Nhật bản </p>
+</div>
+ <p> chúng ta có hai span phần tử có class thuộc tính có giá trị là "note".
+     Cả hai span phần tử sẽ được tạo kiểu như nhau theo .note định nghĩa kiểu trong phần đầu: </p>
+     <b> ví dụ </b>
+     <head>
+        <style>
+        .note {
+          font-size: 120%;
+          color: red;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>My <span class="note">Important</span> Heading</h1>
+        <p>This is some <span class="note">important</span> text.</p>
+        
+        </body>
+        
+        <h2> 2: cú pháp cho lớp </h2>
+        <p> Để tạo một lớp; viết một ký tự dấu chấm (.), 
+            theo sau là tên lớp. Sau đó, xác định các thuộc tính CSS trong dấu ngoặc nhọn {}:</p>
+            <b>ví dụ </b>
+            <head>
+                <style>
+                .city {
+                  background-color: tomato;
+                  color: white;
+                  padding: 10px;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h2 class="city">London</h2>
+                <p>London là thủ đô của nước Anh </p>
+                
+                <h2 class="city">Paris</h2>
+                <p>Paris là thủ đô của nước Pháp </p>
+                
+                <h2 class="city">Tokyo</h2>
+                <p>Tokyo là thủ đô của nước Nhật </p>
+                
+                </body> 
+
+<h2> 3: nhiều lớp </h2>
+<p> Các phần tử HTML có thể thuộc nhiều lớp.
+    Để xác định nhiều lớp, hãy phân tách các tên lớp bằng dấu cách, ví dụ: <b>div class="city main"</b>.
+     Phần tử sẽ được tạo kiểu theo tất cả các lớp được chỉ định.</p>
+     <b> ví dụ </b>
+     <head>
+        <style>
+        .city {
+          background-color: tomato;
+          color: white;
+          padding: 10px;
+        } 
+        
+        .main {
+          text-align: center;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>nhiều lớp </h2>
+        <p>Ở đây, cả ba phần tử h2 đều thuộc lớp "city". 
+            Ngoài ra, London cũng thuộc lớp "chính", căn giữa văn bản.</p>
+        
+        <h2 class="city main">London</h2>
+        <h2 class="city">Paris</h2>
+        <h2 class="city">Tokyo</h2>
+        
+        </body>
+
+<h2> 5: Các phần tử khác nhau có thể chia sẻ cùng một lớp</h2>
+<p>Các phần tử HTML khác nhau có thể trỏ đến cùng một tên lớp. </p>
+<b> ví dụ </b>
+<head>
+    <style>
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+    } 
+    </style>
+    </head>
+    <body>
+    <h2>Các phần tử khác nhau có thể chia sẻ cùng một lớp</h2>
+    <p>Ngay cả khi hai phần tử không có cùng tên thẻ, chúng vẫn có thể trỏ đến cùng một lớp và có cùng kiểu CSS:</p>
+    <h2 class="city">Paris</h2>
+    <p class="city">Paris is the capital of France.</p>
+    </body>
+
+    <h2> 6:Sử dụng thuộc tính lớp trong JavaScript </h2>
+    <p> Tên lớp cũng có thể được JavaScript sử dụng để thực hiện một số tác vụ nhất định cho các thành phần cụ thể.<br>
+        JavaScript có thể truy cập các phần tử có tên lớp cụ thể bằng phương thức<b>getElementsByClassName()</b>:</p>
+
+    <b> ví dụ </b>
+    <body>
+
+        <h2>Use of The class Attribute in JavaScript</h2>
+        <p>Click the button to hide all elements with class name "city":</p>
+        
+        <button onclick="myFunction()">Hide elements</button>
+        
+        <h2 class="city">London</h2>
+        <p>London là thủ đô của nước anh </p>
+        
+        <h2 class="city">Paris</h2>
+        <p>Paris là thủ đô của nước pháp </p>
+        
+        <h2 class="city">Tokyo</h2>
+        <p>Tokyo là thủ đô của nước nhật </p>
+        
+        <script>
+        function myFunction() {
+          var x = document.getElementsByClassName("city");
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+        }
+        </script>
+        
+        </body>
+
+</body>
+</html>

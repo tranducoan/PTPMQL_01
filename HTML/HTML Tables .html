@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1> phần 1 : Bảng trong HTML </h1>
+<h2>1. Xác định bảng HTML (Define an HTML Table) </h2>
+<p>Một bảng trong HTML bao gồm các ô bảng bên trong các hàng và cột.</p>
+<h2> ví dụ </h2>
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+    <body>
+    
+    <h2>Một bảng HTML cơ bản</h2>
+    
+    <table style="width:100%">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+    <h2>2. Ô bảng(Table Cells) </h2>
+    <p>Mỗi ô của bảng được xác định bởi một thẻ (td)và một thẻ (/td)<br>
+        td là viết tắt của dữ liệu bảng.<br>
+        Mọi thứ ở giữa (td) và (/td) là nội dung của ô bảng.<br></p>
+        <h2>ví dụ </h2>
+        <style>
+            table, ta, tb {
+              border:1px solid black;
+            }
+            </style>
+            <body>
+            
+            <h2>Các phần tử TD xác định các ô của bảng</h2>
+            
+            <table style="width:100%">
+              <ta>
+                <tb>Emil</tb>
+                <tb>Tobias</tb>
+                <tb>Linus</tb>
+              </ta>
+            </table>
+    
+<h2>3. hàng bảng (Table Rows)</h2>
+<p>Mỗi hàng của bảng bắt đầu bằng một thẻ <b>(tr)</b>và kết thúc bằng một thẻ <b>(/tr)</b><br>
+    tr là viết tắt của hàng bảng.</p>
+<h2>ví dụ </h2>
+<style>
+    table, tc, te {
+      border:1px solid black;
+    }
+    </style>
+    <body>
+    
+    <h2>Phần tử TR xác định các hàng trong bảng</h2>
+    
+    <table style="width:100%">
+      <tc>
+        <te>Emil</te>
+        <te>Tobias</te>
+        <te>Linus</te>
+      </tc>
+      <tc>
+        <te>16</te>
+        <te>14</te>
+        <te>10</te>
+      </tc>
+    </table>
+    
+<h2>4.Tiêu đề bảng (Table Headers) </h2>
+<p>Đôi khi bạn muốn các ô của mình là ô tiêu đề bảng.
+     Trong những trường hợp đó, hãy sử dụng thẻ <b>(th) </b>thay vì thẻ <b>(td)</b>
+    th là viết tắt của tiêu đề bảng.</p>
+    <h2>ví dụ </h2>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+        <body>
+        
+        <h2>Phần tử TH xác định tiêu đề bảng</h2>
+        
+        <table style="width:100%">
+          <tr>
+            <th>Person 1</th>
+            <th>Person 2</th>
+            <th>Person 3</th>
+          </tr>
+          <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+        </table>
+       
+        <h1> phần 2: Đường viền bảng </h1>
+        <h2> 1.Cách thêm đường viền (How To Add a Border) </h2>
+        <p>Để thêm đường viền, hãy sử dụng <b>border</b> thuộc tính CSS trên table, 
+            <b>th </b>và <b>td </b>các phần tử:</p>
+            <h2> ví dụ </h2>
+            <style>
+                table, th, td {
+                  border: 1px solid black;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h2>Bảng có viền</h2>
+                
+                <p>Sử dụng thuộc tính CSS border để thêm đường viền vào bảng.</p>
+                
+                <table style="width:100%">
+                  <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th> 
+                    <th>Age</th>
+                  </tr>
+                  <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                  </tr>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>80</td>
+                  </tr>
+                </table>
+            
+<h2>2.Đường viền bảng được thu gọn (Collapsed Table Borders) </h2>    
+<p>Để tránh có đường viền kép như trong ví dụ trên, hãy đặt thuộc <b>border-collapse </b>tính CSS thành <b>collapse.</b><br>
+    Điều này sẽ làm cho các đường viền thu gọn lại thành một đường viền duy nhất:</p>   
+    
+    <h2> ví dụ </h2>
+    <head>
+        <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Biên giới thu gọn</h2>
+        <p>Nếu bạn muốn các đường viền thu gọn thành một đường viền, hãy thêm thuộc tính CSS border-collapse.</p>
+        
+        <table style="width:100%">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>
+        
+        <h2>3.Kiểu đường viền bảng (Style Table Borders)</h2>
+        <p>Nếu bạn đặt màu nền cho mỗi ô và đặt đường viền màu trắng (giống như nền tài liệu), 
+            bạn sẽ có ấn tượng về một đường viền vô hình:</p>
+            <h2> ví dụ </h2>
+            <head>
+                <style>
+                table, th, td {
+                  border: 1px solid white;
+                  border-collapse: collapse;
+                }
+                th, td {
+                  background-color: #96D4D4;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h2>Bảng có đường viền vô hình</h2>
+                
+                <p>Tạo kiểu cho bảng bằng đường viền màu trắng và màu nền của các ô để tạo ấn tượng về đường viền vô hình.</p>
+                <table style="width:100%">
+                  <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th> 
+                    <th>Age</th>
+                  </tr>
+                  <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                  </tr>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>80</td>
+                  </tr>
+                </table>
+           
+        <h2>4. đường viền tròn (Round Table Borders) </h2>   
+        <p>Với <b>border-radius</b> thuộc tính, các đường viền có các góc tròn:</p>     
+        <h2>ví dụ </h2>
+        <head>
+            <style>
+            table, th, td {
+              border: 1px solid black;
+              border-radius: 10px;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h2>Bảng có viền tròn</h2>
+            
+            <p>Sử dụng thuộc tính bán kính đường viền CSS để thêm các góc tròn vào đường viền.</p>
+            
+            <table style="width:100%">
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th> 
+                <th>Age</th>
+              </tr>
+              <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+              </tr>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+              </tr>
+            </table>
+        <p><b>lưu ý </b>:Bỏ qua đường viền xung quanh bảng bằng cách thoát <b>table</b> khỏi bộ chọn css: </p>
+<h2>5.Đường viền bảng chấm (Dotted Table Borders) </h2>
+<p> Với <b>border-style </b>thuộc tính này, bạn có thể thiết lập giao diện của đường viền.
+    Các giá trị sau được cho phép:<br>
+    dotted ;     
+    dashed  ;   
+    solid   ;  
+    double ;    
+    groove  ;   
+    ridge  ;   
+    inset  ;   
+    outset ;    
+    none     ;
+    hidden ;    </p>
+    <h2> ví dụ </h2>
+    <head>
+        <style>
+        th, td {
+          border-style: dotted;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h2>Bảng có viền chấm</h2>
+        
+        <p>Sử dụng thuộc tính CSS border-style để thiết lập kiểu đường viền.</p>
+        
+        <table style="width:100%">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th> 
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+          </tr>
+        </table>
+        
+<h2>6. Đường viền </h2>
+<p> Với <b>border-color</b> thuộc tính, bạn có thể đặt màu của đường viền.</p>
+<h2> ví dụ </h2>
+<head>
+    <style>
+    th, td {
+      border-style:solid;
+      border-color: #96D4D4;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Bảng có màu viền</h2>
+    
+    <p>Sử dụng thuộc tính CSS border-color để đặt màu cho đường viền.</p>
+    
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th> 
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+      </tr>
+    </table>
+    
+    <h1>.Kích thước bảng HTML(HTML Table Sizes) </h1>
+    <h2>1.Chiều rộng bảng HTML(HTML Table Width) </h2>
+    <p>Để đặt chiều rộng của bảng, hãy thêm <b>style </b>thuộc tính vào <b>table</b> thành phần:</p>
+<p>ví dụ </p>
+<style>
+  table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+  
+  <body>
+  
+  <h2>bảng rộng 100%</h2>
+  
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th> 
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+  <h2>2.Chiều rộng cột bảng HTML(HTML Table Column Width)</h2>
+  <p>Để đặt kích thước của một cột cụ thể, hãy thêm <b>style</b> thuộc tính trên phần tử <b>th</b> hoặc <b>td</b></p>
+<h2>ví dụ </h2>
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">tên </th>
+    <th>họ </th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<h2> 3.Chiều cao hàng của bảng HTML</h2>
+<p>Để đặt chiều cao của một hàng cụ thể, hãy thêm <b>style</b> thuộc tính trên thành phần hàng của bảng:</p>
+<h2> ví dụ </h2>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<h2> Tiêu đề bảng HTML </h2>
+<p>Tiêu đề bảng được xác định bằng thcác phần tử. Mỗi <b>th</b> phần tử đại diện cho một ô của bảng.</p>
+<h2> ví dụ </h2>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<h2> Tiêu đề bảng dọc</h2>
+<p>Để sử dụng cột đầu tiên làm tiêu đề bảng, hãy xác định ô đầu tiên trong mỗi hàng làm <b>th </b>phần tử:</p>
+<h2> ví dụ </h2>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>94</td>
+    <td>50</td>
+  </tr>
+</table>
+
+<h2>Căn chỉnh tiêu đề bảng </h2>
+<p> Để căn trái các tiêu đề bảng, hãy sử dụng <b>text-align</b> thuộc tính CSS:</p>
+<h2> ví dụ </h2>
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th {
+    text-align: left;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Tiêu đề căn trái</h2>
+  
+  <p>Để căn trái các tiêu đề bảng, hãy sử dụng thuộc tính CSS text-align.</p>
+  
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+
+  <h2> Tiêu đề cho nhiều cột</h2>
+  <p>Để thực hiện việc này, hãy sử dụng <b>colspan</b> thuộc tính trên <b>th</b> phần tử: </p>
+  <h2> ví dụ </h2>
+  <table>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+  </table>
+
+  <h1> Khoảng đệm và khoảng cách bảng HTML</h1>
+  <h2> 1. Bảng HTML - Đệm ô</h2>
+  <p>Đệm ô là khoảng cách giữa các cạnh ô và nội dung ô.<br>
+    Theo mặc định, phần đệm được đặt thành 0.<br>
+    Để thêm phần đệm vào các ô của bảng, hãy sử dụng thuộc tính CSS <b>padding:</b></p>
+    <h2>ví dụ </h2>
+    <head>
+      <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 15px;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <h2>Cellpadding</h2>
+      <p>Cell padding specifies the space between the cell content and its borders.</p>
+      
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+
+      <p> <b>Ngoài ra:</b> Để chỉ thêm phần đệm phía trên nội dung, hãy sử dụng <b>padding-top</b> thuộc tính.<br>
+        Và các vế còn lại có thuộc tính <b>padding-bottom</b>, <b>padding-left</b>, và <b>padding-right:</b></p>
+<h2> ví dụ </h2>
+<head>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Cellpadding - top - bottom - left - right </h2>
+  <p>We can specify different padding for all fours sides of the cell content.</p>
+  
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th> 
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+  <h2> Bảng HTML - Khoảng cách ô</h2>
+  <p>Khoảng cách ô là khoảng cách giữa mỗi ô.<br>
+    Theo mặc định, không gian được đặt thành 2 pixel.<br>
+    Để thay đổi khoảng cách giữa các ô trong bảng, hãy sử dụng <b>border-spacing</b> thuộc tính CSS trên table phần tử:</p>
+<h2>ví dụ </h2>
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+  table {
+    border-spacing: 30px;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Cellspacing</h2>
+  <p>Change the space between the cells with the border-spacing property.</p>
+  
+  <table style="width:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th> 
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+  <h1>Colspan & Rowspan</h1>
+  <h2> 1.Colspan </h2>
+  <p>Để tạo một ô trải dài trên nhiều cột, hãy sử dụng <b>colspan</b> thuộc tính:</p>
+  <h2>ví dụ </h2>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Cell that spans two columns</h2>
+    <p>To make a cell span more than one column, use the colspan attribute.</p>
+    
+    <table style="width:100%">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>43</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+      </tr>
+    </table>
+    <h2> Rowspan</h2>
+    <p>Để tạo một ô trải dài trên nhiều hàng, hãy sử dụng <b>rowspan</b> thuộc tính:</p>
+    <h2>ví dụ </h2>
+    <head>
+      <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <h2>Cell that spans two rows</h2>
+      <p>To make a cell span more than one row, use the rowspan attribute.</p>
+      
+      <table style="width:100%">
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+        </tr>
+      </table>
+
+      <h1> kiểu dáng bảng trong HTML </h1>
+      <h2> HTML Table - Zebra Stripes ( sọc vằn )</h2>
+      <p>Nếu bạn thêm màu nền trên mỗi hàng khác của bảng, bạn sẽ có được hiệu ứng sọc ngựa vằn đẹp mắt.<br>
+        Để tạo kiểu cho mọi thành phần hàng khác của bảng, hãy sử dụng <b>nth-child(even)</b> bộ chọn như thế này:</p>
+
+        <h2>ví dụ </h2>
+        <head>
+          <style>
+          table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          th, td {
+            text-align: left;
+            padding: 8px;
+          }
+          
+          tr:nth-child(even) {
+            background-color: #D6EEEE;
+          }
+          </style>
+          </head>
+          <body>
+          
+          <h2>Zebra Striped Table</h2>
+          <p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+          
+          <table>
+            <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+            </tr>
+            <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+            </tr>
+            <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+            </tr>
+            <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+            </tr>
+            <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+            </tr>
+          </table>
+
+          <h2> HTML Table - Vertical Zebra Stripes (sọc vằn dọc ) </h2>
+<p> Để tạo sọc ngựa vằn dọc, hãy tạo kiểu cho mỗi cột khác thay vì mỗi hàng khác .<br>
+  Đặt <b>:nth-child(even)</b>các thành phần dữ liệu cho bảng như thế này:</p>
+  <h2>ví dụ </h2>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    
+    th:nth-child(even),td:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Bảng sọc</h2>
+    <p>Đối với các bảng sọc ngựa vằn, hãy sử dụng bộ chọn nth-child() và thêm màu nền cho tất cả các hàng trong bảng chẵn (hoặc lẻ):</p>
+    
+    <table style="width:100%">
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    </table>
+
+<h2> 3. Combine Vertical and Horizontal Zebra Stripes( Kết hợp sọc ngựa vằn dọc và ngang) </h2>
+<p>Bạn có thể kết hợp kiểu dáng từ hai ví dụ trên và bạn sẽ có sọc trên mỗi hàng và mỗi cột khác<br>
+  Nếu bạn sử dụng màu trong suốt, bạn sẽ có được hiệu ứng chồng chéo.<br>
+  Sử dụng <b>rgba()</b> màu để chỉ định độ trong suốt của màu:</p>
+<2> ví dụ </2>
+<head>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Bảng sọc</h2>
+  <p>Đối với các bảng sọc ngựa vằn, hãy sử dụng bộ chọn nth-child() và thêm màu nền cho tất cả các hàng trong bảng chẵn (hoặc lẻ):</p>
+  
+  <table style="width:100%">
+    <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+      <th>FRI</th>
+      <th>SAT</th>
+      <th>SUN</th>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </table>
+  
+  <h2> Bộ chia ngang (Horizontal Dividers)</h2>
+  <p>Nếu bạn chỉ định các đường viền ở cuối mỗi hàng của bảng, bạn sẽ có một bảng có các ngăn ngang.<br>
+    Thêm thuộc <b>border-bottom</b> tính cho tất cả <b>tr</b> các phần tử để có được dải phân cách ngang:</p>
+<h2> ví dụ </h2>
+<head>
+  <style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Bordered Table Dividers</h2>
+  <p>Add the border-bottom property to the tr elements for horizontal dividers:</p>
+  
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    <th>Savings</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+      <td>$150</td>
+    </tr>
+    <tr>
+      <td>Joe</td>
+      <td>Swanson</td>
+      <td>$300</td>
+    </tr>
+    <tr>
+      <td>Cleveland</td>
+      <td>Brown</td>
+      <td>$250</td>
+    </tr>
+  </table>
+
+  <h2> bảng di chuột </h2>
+  <p>Sử dụng <b>:hover</b> bộ chọn bật <b>tr</b> để đánh dấu các hàng trong bảng khi di chuột qua:</p>
+  <h2> ví dụ </h2>
+  <head>
+    <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #DDD;
+    }
+    
+    tr:hover {background-color: #D6EEEE;}
+    </style>
+    </head>
+    <body>
+    
+    <h2>Bảng di chuột</h2>
+    <p>Di chuyển chuột qua các hàng của bảng để xem hiệu ứng.</p>
+    
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+      </tr>
+    </table>
+    
+<h1> Nhóm bảng trong html </h1>
+<h2> 1. Nhóm bảng HTML</h2>
+<p> Nếu bạn muốn tạo kiểu cho hai cột đầu tiên của bảng, hãy sử dụng các phần tử <b>colgroup</b> và <b>col</b><br> .
+  Phần tử này <b>colgroup</b> phải được sử dụng làm nơi chứa các thông số kỹ thuật của cột.<br>
+    Mỗi nhóm được chỉ định bằng một <b>col</b> phần tử <br>
+    Thuộc <b>span</b> tính chỉ định số lượng cột có kiểu.<br>
+    Thuộc <b>style</b> tính chỉ định kiểu cho các cột.<br></p>
+
+    <h2> ví dụ </h2>
+
+    <head>
+      <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <h2>Colgroup</h2>
+      <p>Thêm nhóm a với phần tử col trải rộng trên hai cột để xác định kiểu cho hai cột:</p>
+      
+      <table style="width: 100%;">
+      <colgroup>
+        <col span="2" style="background-color: #D6EEEE">
+      </colgroup>
+      <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+      <th>FRI</th>
+      <th>SAT</th>
+      <th>SUN</th>
+      </tr>
+      <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      </tr>
+      <tr>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      </tr>
+      <tr>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td>20</td>
+      <td>21</td>
+      </tr>
+      <tr>
+      <td>22</td>
+      <td>23</td>
+      <td>24</td>
+      <td>25</td>
+      <td>26</td>
+      <td>27</td>
+      <td>28</td>
+      </tr>
+      </table>
+
+      <h2> 1 số Thuộc tính CSS hợp pháp</h2>
+      <p><b>lưu ý : </b>Chỉ có một lựa chọn rất hạn chế về thuộc tính CSS được phép sử dụng trong nhóm colgroup:<br>
+        thuộc tính<b>width</b><br>
+        thuộc tính<b>visibility</b>  <br>
+        thuộc tính<b>background</b><br>
+        <b></b>border</p>
+
+        <h2>2 Nhiều phần tử Col </h2>
+        <p> Nếu bạn muốn tạo kiểu cho nhiều cột hơn với các kiểu khác nhau, hãy sử dụng nhiều <b>col</b> phần tử hơn bên trong <b>colgroup:</b>
+        </p>
+<h2> ví dụ </h2>
+<head>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Multiple Col Elements</h2>
+  <p>Add multiple col elements in the colgroup:</p>
+  
+  <table style="width: 100%;">
+    <colgroup>
+      <col span="2" style="background-color: #D6EEEE">
+      <col span="3" style="background-color: pink">
+    </colgroup>
+  <tr>
+  <th>MON</th>
+  <th>TUE</th>
+  <th>WED</th>
+  <th>THU</th>
+  <th>FRI</th>
+  <th>SAT</th>
+  <th>SUN</th>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>2</td>
+  <td>3</td>
+  <td>4</td>
+  <td>5</td>
+  <td>6</td>
+  <td>7</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>9</td>
+  <td>10</td>
+  <td>11</td>
+  <td>12</td>
+  <td>13</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>16</td>
+  <td>17</td>
+  <td>18</td>
+  <td>19</td>
+  <td>20</td>
+  <td>21</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>23</td>
+  <td>24</td>
+  <td>25</td>
+  <td>26</td>
+  <td>27</td>
+  <td>28</td>
+  </tr>
+  </table>
+
+  <h2> 3 Nhóm Colgroup trống</h2>
+  <p> Nếu bạn muốn tạo kiểu cho các cột ở giữa bảng, hãy chèn <b>col</b> phần tử "trống" (không có kiểu) cho các cột trước:</p>
+<h2> ví dụ </h2>
+<head>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Empty Colgroups</h2>
+  <p>Add "empty" col elements that represents the columns before the columns you want to style:</p>
+  
+  <table style="width: 100%;">
+  <colgroup>
+    <col span="3">
+    <col span="2" style="background-color: pink">
+  </colgroup>
+  <tr>
+  <th>MON</th>
+  <th>TUE</th>
+  <th>WED</th>
+  <th>THU</th>
+  <th>FRI</th>
+  <th>SAT</th>
+  <th>SUN</th>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>2</td>
+  <td>3</td>
+  <td>4</td>
+  <td>5</td>
+  <td>6</td>
+  <td>7</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>9</td>
+  <td>10</td>
+  <td>11</td>
+  <td>12</td>
+  <td>13</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>16</td>
+  <td>17</td>
+  <td>18</td>
+  <td>19</td>
+  <td>20</td>
+  <td>21</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>23</td>
+  <td>24</td>
+  <td>25</td>
+  <td>26</td>
+  <td>27</td>
+  <td>28</td>
+  </tr>
+  </table>
+
+  <h2>Ẩn cột </h2>
+<p> Bạn có thể ẩn các cột bằng <b>visibility: collapse</b> thuộc tính:</p>
+<h2> ví dụ </h2>
+<head>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Hide Columns</h2>
+  <p>You can hide specific columns with the visibility property:</p>
+  
+  <table style="width: 100%;">
+  <colgroup>
+      <col span="2">
+      <col span="3" style="visibility: collapse">
+    </colgroup>
+  <tr>
+  <th>MON</th>
+  <th>TUE</th>
+  <th>WED</th>
+  <th>THU</th>
+  <th>FRI</th>
+  <th>SAT</th>
+  <th>SUN</th>
+  </tr>
+  <tr>
+  <td>1</td>
+  <td>2</td>
+  <td>3</td>
+  <td>4</td>
+  <td>5</td>
+  <td>6</td>
+  <td>7</td>
+  </tr>
+  <tr>
+  <td>8</td>
+  <td>9</td>
+  <td>10</td>
+  <td>11</td>
+  <td>12</td>
+  <td>13</td>
+  <td>14</td>
+  </tr>
+  <tr>
+  <td>15</td>
+  <td>16</td>
+  <td>17</td>
+  <td>18</td>
+  <td>19</td>
+  <td>20</td>
+  <td>21</td>
+  </tr>
+  <tr>
+  <td>22</td>
+  <td>23</td>
+  <td>24</td>
+  <td>25</td>
+  <td>26</td>
+  <td>27</td>
+  <td>28</td>
+  </tr>
+  </table>
+
+</body>
+</html>
