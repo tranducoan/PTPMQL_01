@@ -1,4 +1,4 @@
-namespace DemoMVC.Models
+namespace MvcMovie.Models
 {
 //Tran Duc Toan  - 2021050642
     public class HeThongPhanPhoi
