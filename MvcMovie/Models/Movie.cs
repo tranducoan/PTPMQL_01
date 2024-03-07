@@ -1,22 +1,20 @@
-using System.CodeDom.Compiler;
-using System.Security.Cryptography.X509Certificates;
-using System.Reflection;
-using System .ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
+
 namespace MvcMovie.Models;
 
-public class MvcMovie
+public class Movie 
 {
-    public int id { get;set;}
+    public int id { get;set; } 
 
-public string? title { get; set; }
+    public string? title {get; set; }
 [DataType(DataType.Date)]
 
-public DateTime releaseDate { get; set; }
+public DateTime releaseDate { get; set;}
 
-public string? Genre { get; set; }
+public string? genre {get; set; }
 
-public decimal price { get; set; }
+public decimal price { get; set ;}
+
+
 
 }
-
-
