@@ -3,7 +3,8 @@ namespace MvcMovie.Models
 
     public class Employee : Person
     {
-//Tran Thi Kim Dung - 2021050135
+//Tran Đuc toan  - 2021050642
+
         public string EmployeeId { get; set; } 
          
         public int Age { get; set; } 
