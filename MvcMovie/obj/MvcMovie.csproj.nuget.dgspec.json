@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\MvcMovie.csproj": {}
+    "c:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\MvcMovie.csproj": {
+    "c:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "c:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\MvcMovie.csproj",
+        "projectPath": "c:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\MvcMovie.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\obj\\",
+        "outputPath": "c:\\Users\\Admin\\Desktop\\PTPMQL\\MvcMovie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
