@@ -13,7 +13,7 @@ public string? title { get; set; }
 
 public DateTime releaseDate { get; set; }
 
-Public string? Genre { get; set; }
+public string? Genre { get; set; }
 
 public decimal price { get; set; }
 
