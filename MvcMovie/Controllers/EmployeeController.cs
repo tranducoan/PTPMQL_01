@@ -8,7 +8,7 @@ namespace DemoMVC.Controllers
     {
         public IActionResult Index()
         {
-            return View(new Employee()); 
+            return View(); 
         }
 
         [HttpPost]
