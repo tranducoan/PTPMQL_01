@@ -1,14 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("Hello, World!");
-//in ra màn hình: 6
-Console.WriteLine(6);
-Console.WriteLine(9);
+using System;
 
- int a = 9; //khai bao bien so a kieu int va gan gia tri = 9
- Console.WriteLine("a = " + a);
+class Program
+{
+    static void Main()
+    {
+// khai báo biến kiểu string và gán giá trị là trần đức toàn 
+        // khai báo biến kiểu int và gán giá trị là 4
+        const string hoTen = "trần đức toàn ";
+        const int namLamViec = 4;
 
-//in ra man hinh: a + b = 12
- int a1 = 9;
- int b1 = 3;
- Console.WriteLine("{0} + {1} = {2}", a1, b1, a1+b1);
+        Console.WriteLine("Họ và tên: " + hoTen);
+        Console.WriteLine("Năm làm việc: " + namLamViec);
+    }
+}
