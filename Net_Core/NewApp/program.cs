@@ -1,18 +1,17 @@
-using System.Dynamic;
-namespace NewApp;
-
-using System;
-
-internal class Program
-{
-    // ví dụ về chuyển đổi dữ liệu chương 5 C# trang 29 sử dung lớp Convert
-    private static void Main(string[] args)
+public class Program
     {
-        //giá trị đầu vào của chuyển đổi 
-string str ="123";
-//chuyển đổi kiểu dữ liệu string giá trị ="123"
-//sang kiểu dữ liệu int giá trị sau khi chuyển đổi = 123
-int a = Convert.ToInt32(str);
-System.Console.WriteLine("a" + a);
+        // cấu trúc rẽ nhánh if--else
+      static void Main()
+       float a =10;
+      if(a >=8.5){ 
+        System.Console.WriteLine("Hoc sinh dat loai gioi");
+      } else if(a >=6.5){
+        System.Console.WriteLine("Hoc sinh dat loai Kha");
+      } else if(a>=5){
+        System.Console.WriteLine("Hoc sinh loai Trung Binh");
+      }else if(a>=3.5){
+        System.Console.WriteLine("Hoc sinh loai Yeu");
+      }else {
+         System.Console.WriteLine("Hoc sinh loai Kem");
+      }
     }
-}
