@@ -1,14 +1,19 @@
- public class Program
+public class Program
     {
         public static void Main(string[] args)
         {
-            int i= 1;
-          do
-          {
-            System.Console.WriteLine("vòng lặp thứ {0} ",i);
-            //tăng i lên 1 đơn vị để đảm bảo rằng có lúc i>=10
-            //i>=10 thì vòng lặp kết thúc 
-            i++;
-          } while(i<10);
+        // lệnh break  
+    for(int i = 0; i < 10; i++)
+      {
+        if(i ==5) break;
+        System.Console.WriteLine("Vòng lặp thứ {0}",i);
+      }
+// lệnh continue       
+   for(int i = 0; i < 10; i++)
+      {
+        if(i ==5) break;
+        if(i ==5) continue;
+        System.Console.WriteLine("Vòng lặp thứ {0}",i);
+    }
         }
     }
