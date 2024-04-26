@@ -1,31 +1,22 @@
 namespace NewApp.Models
 {
-    public class Employee
+    public class Student
     {
-        
-       public int MaNhanVien { get; set; }
-       public string TenNhanVien { get; set; }
-       public int Tuoi { get; set; }
-       public double Luong { get; set; }
-       
-       
-       public void NhapThongTin()
-       {
-        System.Console.Write("Ma Nhan Vien = ");
-        MaNhanVien = Convert.ToInt32(Console.ReadLine());
-        System.Console.Write("Ten Nhan Vien = ");
-        TenNhanVien = Console.ReadLine();
-        System.Console.Write("Tuoi = ");
-        Tuoi = Convert.ToInt32(Console.ReadLine());
-        System.Console.Write("Luong = ");
-        Luong = Convert.ToDouble(Console.ReadLine());
-        
-
-        
-       }
-       public void HienThi()
-       {
-        System.Console.WriteLine("{0} - {1} - {2} - {3} VND", MaNhanVien, TenNhanVien, Tuoi, Luong);
-       }
+        public int MaSinhVien { get; set; }
+        public string TenSinhVien { get; set; }
+        public string Nganh { get; set; }
+        public void NhapThongTin()
+        {
+            System.Console.Write("Ma Sinh Vien = ");
+            MaSinhVien = Convert.ToInt32(Console.ReadLine());
+            System.Console.Write("Ten Sinh Vien = ");
+            TenSinhVien = Console.ReadLine();
+            System.Console.Write("Nganh = ");
+            Nganh = Console.ReadLine();
+        }
+        public void HienThi()
+        {
+            System.Console.WriteLine("{0} - {1} - {2} ",MaSinhVien, TenSinhVien, Nganh);
+        }
     }
 }
