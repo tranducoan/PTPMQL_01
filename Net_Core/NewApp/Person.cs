@@ -1,27 +1,31 @@
 namespace NewApp.Models
 {
-    public class Person
+    public class Employee
     {
-        //thuoc tinh
-       public string PersonID { get; set; }
-       public string FullName { get; set; }
-       public int Age { get; set; }
-
-       //phuong thuc
+        
+       public int MaNhanVien { get; set; }
+       public string TenNhanVien { get; set; }
+       public int Tuoi { get; set; }
+       public double Luong { get; set; }
+       
+       
        public void NhapThongTin()
        {
-        System.Console.Write("PersonID = ");
-        PersonID = Console.ReadLine();
-        System.Console.Write("Full Name = ");
-        FullName = Console.ReadLine();
-        System.Console.Write("Age = ");
-        Age = Convert.ToInt16(Console.ReadLine());
+        System.Console.Write("Ma Nhan Vien = ");
+        MaNhanVien = Convert.ToInt32(Console.ReadLine());
+        System.Console.Write("Ten Nhan Vien = ");
+        TenNhanVien = Console.ReadLine();
+        System.Console.Write("Tuoi = ");
+        Tuoi = Convert.ToInt32(Console.ReadLine());
+        System.Console.Write("Luong = ");
+        Luong = Convert.ToDouble(Console.ReadLine());
+        
 
-
+        
        }
        public void HienThi()
        {
-        System.Console.WriteLine("{0} - {1} - {2} tuoi", PersonID, FullName, Age);
+        System.Console.WriteLine("{0} - {1} - {2} - {3} VND", MaNhanVien, TenNhanVien, Tuoi, Luong);
        }
     }
 }
