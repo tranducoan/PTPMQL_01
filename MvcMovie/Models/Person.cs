@@ -1,12 +1,15 @@
-namespace MvcMovie.Models.
-{
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
+
+namespace MvcMovie.Models
+{
+    [Table("Person")]
     public class Person
     {
-         public string PersonId { get; set; }
-        public string FullName { get; set; }
+        [Key]
+        public string PersonID { get; set; }
+        public string Fullname { get; set; }
         public string Address { get; set; }
-//TRAN DUC TOAN  - 2021050642     
-
     }
 }
