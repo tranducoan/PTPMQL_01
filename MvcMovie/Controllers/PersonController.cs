@@ -7,6 +7,7 @@ using SQLitePCL;
 using System.Diagnostics.SymbolStore;
 using System.Linq.Expressions;
 using MvcMovie.Models.Process;
+using X.PagedList;
 
 namespace MvcMovie.Controllers
 {
@@ -18,9 +19,9 @@ namespace MvcMovie.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Index()
+      public async Task<IActionResult> Index(int? page)
         {
-            var model = await _context.Persons.ToListAsync();
+            var model =  _context.Person.ToList().ToPagedList(page?? 1,5 );
             return View(model);
         }
         public IActionResult Create()
