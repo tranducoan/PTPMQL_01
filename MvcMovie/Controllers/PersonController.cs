@@ -176,7 +176,24 @@ namespace MvcMovie.Controllers
             ViewBag.infoPerson = strOutput;
             return View();
         }
-    }
-
-    
+          public IActionResult Download()
+            {
+                        //tên file cần dowload
+                    var fileName = "PersonList.xlsx";
+                    using (ExcelPackage excelPackage = new ExcelPackage())
+                    {
+                        ExcelWorksheet excelWorksheet = excelPackage.Workbook.Worksheets.Add("Sheet 1");
+                        excelWorksheet.Cells["A1"].Value = "PersonID";
+                        excelWorksheet.Cells["B1"].Value = "FullName";
+                        excelWorksheet.Cells["C1"].Value = "Address";
+                        //get all person
+                        var psList = _context.Person.ToList();
+                        //fill data worksheet
+                        excelWorksheet.Cells["A2"].LoadFromCollection(psList);
+                        var stream = new MemoryStream(excelPackage.GetAsByteArray());
+                        //dowload file
+                        return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
+                    }
+                }  
+    }   
 }
